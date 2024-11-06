@@ -1,0 +1,280 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>airesnuevosNQN</title>
+    <style>
+        /* Estilos generales */
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #ffffff;
+            color: #333;
+            line-height: 1.6;
+        }
+
+        /* Encabezado */
+        header {
+            background-color: #ffffff;
+            padding: 10px 0;
+            color: rgb(255, 0, 0);
+            text-align: center;
+        }
+
+        .nombre-periodico {
+            margin: 0;
+            font-size: 2em;
+            font-weight: bold;
+        }
+
+        .slogan-periodico {
+            font-size: 0.9em;
+            font-style: italic;
+            color: #0c0b0b;
+        }
+
+        /* Anuncios en el encabezado */
+        .anuncio-header {
+            position: absolute;
+            top: 15px;
+            width: 300px;
+            height: 100px;
+            background-color: #fff;
+            border: 0px solid #ffffff;
+            color: #000;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+
+        .anuncio-header.izquierda { left: 40px; }
+        .anuncio-header.derecha { right: 40px; }
+
+        /* Menú de navegación */
+        nav {
+            background-color: #000000;
+            padding: 8px 0;
+        }
+
+        nav ul {
+            list-style: none;
+            display: flex;
+            justify-content: center;
+            margin: 0;
+            padding: 0;
+            flex-wrap: wrap;
+        }
+
+        nav ul li {
+            margin: 0 15px;
+        }
+
+        nav ul li a {
+            color: white;
+            text-decoration: none;
+            font-size: 1em;
+            transition: color 0.3s;
+        }
+
+        nav ul li a:hover {
+            color: #db0f08;
+        }
+
+        /* Contenido principal */
+        .contenido-principal {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            padding: 20px;
+            max-width: 1200px;
+            margin: auto;
+        }
+
+        article {
+            width: 100%;
+            max-width: 700px;
+            padding: 20px;
+            background-color: white;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            border-radius: 8px;
+            margin-bottom: 20px;
+        }
+
+        .subtitulo {
+            font-style: italic;
+            font-size: 1.2em;
+            color: #333;
+            margin-top: 10px;
+        }
+
+        .titulo {
+            font-size: 2em;
+            font-weight: bold;
+            color: #141212;
+            margin: 10px 0;
+        }
+
+        .copete {
+            font-size: 1.2em;
+            font-weight: bold;
+            color: #333;
+            margin-bottom: 15px;
+        }
+
+        .contenido {
+            font-size: 1em;
+            color: #333;
+            line-height: 1.6;
+        }
+
+        article img {
+            width: 100%;
+            height: auto;
+            margin: 15px 0;
+            border-radius: 5px;
+        }
+
+        /* Sección de titulares */
+        .titulares {
+            width: 100%;
+            padding: 0 10px;
+        }
+
+        .titulares h3 {
+            font-size: 1.5em;
+            color: #fc0000;
+            margin-bottom: 10px;
+        }
+
+        .titulares .titular-item {
+            background-color: white;
+            padding: 10px;
+            border-bottom: 1px solid #ddd;
+            margin-bottom: 10px;
+            transition: background 0.3s;
+        }
+
+        .titulares .titular-item:hover {
+            background-color: #f9f9f9;
+        }
+
+        .titulares .titular-item a {
+            color: #333;
+            text-decoration: none;
+            font-weight: bold;
+        }
+
+        .titulares .titular-item a:hover {
+            color: #d32f2f;
+        }
+
+        /* Media Queries */
+        @media (min-width: 768px) {
+            .anuncio-header {
+                width: 300px;
+                height: 120px;
+            }
+
+            .contenido-principal {
+                flex-wrap: nowrap;
+            }
+
+            article {
+                width: 70%;
+            }
+
+            .titulares {
+                width: 30%;
+                padding-left: 20px;
+            }
+        }
+
+        @media (min-width: 1024px) {
+            header {
+                padding: 15px 0;
+            }
+
+            .nombre-periodico {
+                font-size: 2.5em;
+            }
+
+            .slogan-periodico {
+                font-size: 1em;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="anuncio-header izquierda">
+            <!-- Reemplaza esto con un video de publicidad con autoplay -->
+            <video width="300" height="100" autoplay>
+                <source src="publicidad\Comp 1_1.mp4" type="c:\Users\Yamil Jara\OneDrive\Imágenes\Escritorio\noticias\publi 1.mp4">
+                Tu navegador no soporta el elemento de video.
+            </video>
+        </div>
+        <div class="anuncio-header derecha">
+            <!-- Reemplaza esto con un video de publicidad con autoplay -->
+            <video width="300" height="100" autoplay>
+                <source src="publicidad\publi 1.mp4" type="video/mp4">
+                Tu navegador no soporta el elemento de video.
+            </video>
+        </div>
+        <div class="nombre-periodico">airesnuevosNQN</div>
+        <p class="slogan-periodico">"El nuevo Neuquén en noticias"</p>
+    </header>
+    
+    <nav>
+        <ul>
+            <li><a href="#">Portada</a></li>
+            <li><a href="#">Regionales</a></li>
+            <li><a href="#">Provinciales</a></li>
+            <li><a href="#">Deporte</a></li>
+            <li><a href="#">Cultura</a></li>
+            <li><a href="#">Política</a></li>
+            <li><a href="#">Espectáculos</a></li>
+        </ul>
+    </nav>
+
+    <div class="contenido-principal">
+        <!-- Contenido principal del artículo -->
+        <article>
+            <h3 class="subtitulo">La UTN abre un nuevo camino en la educación técnica para jóvenes en Neuquén.</h3>
+            <h2 class="titulo">Cutral-Có inauguró el primer colegio preuniversitario de la UTN del país.</h2>
+            <p class="copete">La ciudad de Cutral-Có celebró la inauguración del primer colegio preuniversitario de la Universidad Tecnológica Nacional (UTN) en Argentina, una institución dedicada a la formación técnica y académica de estudiantes secundarios.</p>
+            
+            <img src="images/utn.jpg" alt="Inauguración del colegio preuniversitario de la UTN en Cutral-Có">
+            
+            <p class="contenido">
+                En la búsqueda de Luciana Muñoz, desaparecida en Neuquén desde hace 58 días, la Fiscalía ha rechazado la solicitud de su padre, Leonardo Muñoz, para ser incorporado como querellante en la investigación. Este lunes, durante una audiencia de control, el padre, acompañado por su abogado Maximiliano Gómez, solicitó ser parte de la causa. Sin embargo, la fiscalía, bajo la dirección de Andrés Azar y la asistente letrada Carolina Gutiérrez, negó la petición argumentando que la madre de Luciana ya ocupa ese rol.
+            </p>
+        </article>
+
+        <!-- Titulares adicionales -->
+        <aside class="titulares">
+            <h3>Más titulares</h3>
+            <div class="titular-item">
+                <a href="#">Titular de noticia secundaria 1</a>
+            </div>
+            <div class="titular-item">
+                <a href="#">Titular de noticia secundaria 2</a>
+            </div>
+            <div class="titular-item">
+                <a href="#">Titular de noticia secundaria 3</a>
+            </div>
+            <div class="titular-item">
+                <a href="#">Titular de noticia secundaria 4</a>
+            </div>
+            <div class="titular-item">
+                <a href="#">Titular de noticia secundaria 5</a>
+            </div>
+        </aside>
+    </div>
+
+</body>
+</html>
+
+
